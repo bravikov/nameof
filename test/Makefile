@@ -1,2 +1,5 @@
 example: example.cpp ../nameof.h
-	g++ -std=c++11 -o examaple example.cpp
+	g++ -Wall -std=c++11 -o example example.cpp
+
+clean:
+	rf -f example
