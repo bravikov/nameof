@@ -4,11 +4,11 @@ A header only C++ library provides ```nameof()``` macros to obtain the std::stri
 
 It works like ```nameof()``` in C#.
 
-The expression ```X``` in ```nameof(X)``` should be compilable.
+```nameof()``` accepts expression which should be compilable. If expression is compilable but not correspond expressions which shown below, the ```std::ligic_error``` exception will be thrown.
 
 ## Usage
 
-First you should to include name_of.h file.
+First you should download and include [nameof.h](nameof.h) file.
 
 ```cpp
     #include "nameof.h"
@@ -79,7 +79,5 @@ You can use ```::```, ```->``` and ```.``` operators with any depth of nesting o
         };
         std::string name = nameof(Foo1::foo1->foo2.foo1); // "foo1"
 ```
-
-nameof() accepts expression which should be compilable. If expression is compilable but not correspond expressions which shown above, the std::ligic_error exception will be thrown.
 
 Good luck!
