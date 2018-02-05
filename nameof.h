@@ -1,8 +1,11 @@
 /****************************************************************************
+** nameof() Macros
+** version 1.0.0
+** https://github.com/bravikov/nameof
 **
 ** MIT License
 **
-** Copyright (c) 2018 Dmitry Bravikov
+** Copyright (c) 2018 Dmitry Bravikov <dmitry@bravikov.pro>
 **
 ** Permission is hereby granted, free of charge, to any person obtaining a
 ** copy of this software and associated documentation files (the "Software"),
@@ -23,8 +26,6 @@
 ** DEALINGS IN THE SOFTWARE.
 **
 ****************************************************************************/
-
-/* Project site: https://github.com/bravikov/nameof */
 
 #pragma once
 #ifndef NAMEOF_H_20180129_123322

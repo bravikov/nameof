@@ -1,8 +1,10 @@
 /****************************************************************************
+** Usage Example of nameof() Macros
+** https://github.com/bravikov/nameof
 **
 ** MIT License
 **
-** Copyright (c) 2018 Dmitry Bravikov
+** Copyright (c) 2018 Dmitry Bravikov <dmitry@bravikov.pro>
 **
 ** Permission is hereby granted, free of charge, to any person obtaining a
 ** copy of this software and associated documentation files (the "Software"),
@@ -23,8 +25,6 @@
 ** DEALINGS IN THE SOFTWARE.
 **
 ****************************************************************************/
-
-/* Project site: https://github.com/bravikov/nameof */
 
 #include <iostream>
 
