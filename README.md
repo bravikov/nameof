@@ -1,6 +1,6 @@
 # [nameof](https://github.com/bravikov/nameof)
 
-A header only C++ library provides ```nameof()``` macros to obtain the std::string name of a variable, type, or member.
+A header only C++ library provides ```nameof()``` macro to obtain the std::string name of a variable, type, or member.
 
 It works like ```nameof()``` in C#.
 
@@ -67,17 +67,30 @@ You can get the name of a field of an object.
 You can use ```::```, ```->``` and ```.``` operators with any depth of nesting of entities and with namespaces.
 
 ```cpp
-        struct Foo1
+    struct Foo1
+    {
+        struct Foo2
         {
-            struct Foo2
-            {
-                Foo1* foo1;
-            };
-
             Foo1* foo1;
-            Foo2 foo2;
         };
-        std::string name = nameof(Foo1::foo1->foo2.foo1); // "foo1"
+
+        Foo1* foo1;
+        Foo2 foo2;
+    };
+    std::string name = nameof(Foo1::foo1->foo2.foo1); // "foo1"
+```
+
+## Testing
+
+### Dependencies
+
+* Boost
+
+### Start
+
+```bash
+    cd test
+    make
 ```
 
 Good luck!
