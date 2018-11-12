@@ -41,7 +41,7 @@
 
 namespace bravikov {
     template<int a>
-    std::string _nameof(const std::string x, std::size_t)
+    std::string _nameof(const std::string &x, std::size_t)
     {
         std::regex regex("^&?([_a-zA-Z]\\w*(->|\\.|::))*([_a-zA-Z]\\w*)$");
         std::smatch match;
