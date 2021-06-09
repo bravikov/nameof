@@ -4,7 +4,7 @@ A header only C++ library provides ```nameof()``` macro to obtain the std::strin
 
 It works like ```nameof()``` in C#.
 
-```nameof()``` accepts expression which should be compilable. If expression is compilable but not correspond expressions which shown below, the ```std::ligic_error``` exception will be thrown.
+```nameof()``` accepts expression which should be compilable. If expression is compilable but not correspond expressions which shown below, the ```std::logic_error``` exception will be thrown.
 
 ## Usage
 
